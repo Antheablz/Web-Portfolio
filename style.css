@@ -30,6 +30,24 @@ a, .btn {
 
 
 /* DESKTOP NAV */
+a {
+    color: var(--dark-pink);
+    text-decoration: none;
+    text-decoration-color: white;
+}
+
+a:hover {
+    color: var(--light-pink);
+    text-decoration: underline;
+    text-decoration-color: var(--light-pink);
+}
+
+.logo {
+    font-size: 2rem;
+    color: var(--dark-pink);
+    cursor: default;
+}
+
 nav, .nav-links {
     display: flex;
 }
@@ -45,25 +63,6 @@ nav {
     list-style: none;
     font-size: 1.5rem;
 }
-
-a {
-    color: var(--dark-pink);
-    text-decoration: none;
-    text-decoration-color: white;
-}
-
-a:hover {
-    color: var(--light-pink);
-    text-decoration: underline;
-    text-decoration-color: var(--light-pink);
-}
-    
-.logo {
-    font-size: 2rem;
-    color: var(--dark-pink);
-    cursor: default;
-}
-
 
 
 
@@ -103,6 +102,8 @@ a:hover {
 #mobile-dropdown.open {
     max-height: 300px;
 }
+
+
 
 /* HAMBURGER ICON */
 .mobile-icon {
@@ -147,3 +148,65 @@ a:hover {
 #mobile-hamburger.open div {
     transform: scale(0);
 }
+
+
+
+/* SECTION */
+section {
+    color: var(--dark-pink);
+    padding-top: 5vh;
+    /*margin: 0 10rem;*/
+    box-sizing: border-box;
+    min-height: fit-content;
+    display: flex;
+}
+
+
+
+/* PROFILE */
+.icon {
+    cursor: pointer;
+    height: 2rem;
+}
+
+#profile {
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+    /*height: 10vh;*/
+}
+
+.profile-pic-container {
+    display: flex;
+    height: 400px;
+    width: 400px;
+    /*margin: auto 0;*/
+}
+
+.profile-text {
+    align-self: center;
+    text-align: center;
+}
+
+.profile-text p {
+    font-weight: 600;
+}
+
+.profile-title {
+    text-align: center;
+    font-size: 3rem;
+}
+
+#profile-p1 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+#socials-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+
