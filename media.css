@@ -1,4 +1,5 @@
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 992px) {
+    /* MOBILE NAV */
     #desktop-nav {
         display: none;
     }
@@ -6,4 +7,20 @@
     #mobile-nav {
         display: flex;
     }
+
+
+
+    /* MOBILE PROFILE */
+    #profile {
+        display: block;
+    }
+
+    .profile-pic-container {
+        display: flex;
+        justify-content: center;
+        height: 300px;
+        width: auto;
+        margin-bottom: 3.5%;
+    }
+
 }
