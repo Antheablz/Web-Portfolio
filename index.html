@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="media.css"/>
 </head>
-<body>
+<body id="body-id">
     <nav id="desktop-nav">
         <div class="logo">Anthea Blais</div>
         <div>
@@ -34,6 +34,7 @@
         </div>
     </nav>
 
+    <div id="temp">
 <!-- HOME SECTION-->
     <section id="profile">
         <div class="profile-pic-container">
@@ -41,7 +42,7 @@
         </div>
         <div class="profile-text">
             <p> Hello, I'm
-                <h1 id="profile-title">Anthea Blais</h1>
+                <h1 class="title">Anthea Blais</h1>
                 Computer Science Student
             </p>
             <div class="btn-container">
@@ -49,14 +50,23 @@
                 <button class="btn" onclick="location.href='./#contact'">Contact Info</button>
             </div>
             <div id="socials-container">
-                <img src="./assets/linkedin.png" alt="linkedin img" class="icon" onclick="location.href='http://www.linkedin.com/in/antheablais'"/>
-                <img src="./assets/github.png" alt="github img" class="icon" onclick="location.href='https://github.com/Antheablz'"/>
+                <img id="linkedin-icon" src="./assets/linkedin.png" alt="linkedin img" class="icon" onclick="location.href='http://www.linkedin.com/in/antheablais'"/>
+                <img id="github-icon" src="./assets/github.png" alt="github img" class="icon" onclick="location.href='https://github.com/Antheablz'"/>
             </div>
         </div>
     </section>
 
-
+<!-- ABOUT SECTION -->
+    <section id="about">
+        <div class="profile-text">
+            <p>More About Me!</p>
+            <h1 class="title">About Me</h1>
+        </div>
+    </section>
 
     <script src="script.js"></script>
+    </div>
+
+
 </body>
 </html>

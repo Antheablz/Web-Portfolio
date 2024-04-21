@@ -8,6 +8,9 @@
     --light-pink: #F1CCBB;
     --extra-light-pink: #fff0ef;
     --skin: #E7D5C7;
+
+    --shear-pink: rgba(255,240,239,.8);
+    --shadow: rgba(0,0,0,.8);
 }
 
 * {
@@ -75,7 +78,7 @@ nav {
 
 .mobile-menu {
     position: relative;
-    display: inline-block;
+    display: block;
 }
 
 .mobile-links {
@@ -101,9 +104,26 @@ nav {
     list-style: none;
 }
 
-#mobile-dropdown.open {
-    max-height: 300px;
+.mobile-links li:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--dark-pink);
 }
+
+#mobile-dropdown.open {
+    z-index: 10;
+
+    max-height: 50vh;
+    width: 40vh;
+    background-color: var(--shear-pink);
+    border-radius: 30px;
+    border: var(--dark-pink) 0.1rem solid;
+}
+
+#temp.blur {
+    filter: blur(5px);
+}
+
+
 
 
 
@@ -126,22 +146,9 @@ nav {
     content: "";
     display: block;
     height: 5px;
-    border-radius: 2px;
-    margin: 7px 0;
+    margin: 7px 7px;
     transition: 0.5s;
 }
-
-/*
-.mobile-icon:hover:before {
-    transform: translateY(12px) rotate(135deg);
-}
-.mobile-icon:hover:after {
-    transform: translateY(-12px) rotate(-135deg);
-}
-.mobile-icon:hover div {
-    transform: scale(0);
-}
-*/
 
 #mobile-hamburger.open::before {
     transform: translateY(12px) rotate(135deg);
@@ -163,21 +170,24 @@ section {
     box-sizing: border-box;
     min-height: fit-content;
     display: flex;
+    justify-content: center;
 }
 
 
 
 /* PROFILE */
+#github-icon:hover, #linkedin-icon:hover {
+    border-radius: 20px;
+    box-shadow: .5vh .5vh 1.5vh 0 var(--shadow);
+}
+
 .icon {
     cursor: pointer;
     height: 2.5rem;
 }
 
 #profile {
-    display: flex;
-    justify-content: center;
     gap: 10rem;
-    /*height: 10vh;*/
 }
 
 .profile-pic-container {
@@ -192,7 +202,7 @@ section {
     text-align: center;
 }
 
-#profile-title {
+.title {
     font-size: 2.5rem;
     text-align: center;
 }
@@ -229,8 +239,9 @@ section {
     color: white;
     background-color: var(--dark-pink);
     border: var(--dark-pink) 0.1rem solid;
-    box-shadow: .5vh .5vh 1.5vh 0 rgba(0,0,0,.8);
+    box-shadow: .5vh .5vh 1.5vh 0 var(--shadow);
 }
 
 
 
+/* ABOUT */
