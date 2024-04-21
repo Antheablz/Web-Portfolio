@@ -6,6 +6,7 @@
     --medium-pink: #E4A9A4;
     --orange: #EFBA97;
     --light-pink: #F1CCBB;
+    --extra-light-pink: #fff0ef;
     --skin: #E7D5C7;
 }
 
@@ -16,6 +17,7 @@
 
 body {
     font-family: "Poppins", sans-serif;
+    /*background-color: var(--extra-light-pink);*/
 }
 
 html {
@@ -37,13 +39,13 @@ a {
 }
 
 a:hover {
-    color: var(--light-pink);
+    color: var(--medium-pink);
     text-decoration: underline;
-    text-decoration-color: var(--light-pink);
+    text-decoration-color: var(--medium-pink);
 }
 
 .logo {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: var(--dark-pink);
     cursor: default;
 }
@@ -108,8 +110,10 @@ nav {
 /* HAMBURGER ICON */
 .mobile-icon {
     transform: translate(-50%, -50%);
-    position: absolute;
+    /*position: absolute;*/
     display: inline-block;
+    /*height: 12px;
+    width: 25px;*/
     height: 24px;
     width: 50px;
     cursor: pointer;
@@ -166,7 +170,7 @@ section {
 /* PROFILE */
 .icon {
     cursor: pointer;
-    height: 2rem;
+    height: 2.5rem;
 }
 
 #profile {
@@ -188,16 +192,45 @@ section {
     text-align: center;
 }
 
-.profile-title {
+#profile-title {
+    font-size: 2.5rem;
     text-align: center;
-    font-size: 3rem;
 }
 
 #socials-container {
     display: flex;
     justify-content: center;
-    margin-top: 1rem;
     gap: 1rem;
 }
+
+
+
+/* BUTTONS */
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.btn {
+    font-weight: 600;
+    transition:  all 300ms ease;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
+    color: var(--dark-pink);
+    background-color: var(--extra-light-pink);
+    border: var(--dark-pink) 0.1rem solid;
+}
+
+.btn:hover {
+    cursor: pointer;
+    color: white;
+    background-color: var(--dark-pink);
+    border: var(--dark-pink) 0.1rem solid;
+    box-shadow: .5vh .5vh 1.5vh 0 rgba(0,0,0,.8);
+}
+
 
 
