@@ -34,13 +34,15 @@
         </div>
     </nav>
 
-    <div id="temp">
+
+
 <!-- HOME SECTION-->
+    <div id="blur-container"><!-- BLUR CONTAINER START -->
     <section id="profile">
         <div class="profile-pic-container">
-            <img  id="desktop-pic" src="./assets/profile-pic.jpeg" alt="Anthea Blais" style="border-radius: 50px;"/>
+            <img  id="desktop-pic" src="./assets/profile-pic.jpeg" alt="Anthea Blais"/>
         </div>
-        <div class="profile-text">
+        <div class="profile-text-container">
             <p> Hello, I'm
                 <h1 class="title">Anthea Blais</h1>
                 Computer Science Student
@@ -58,15 +60,39 @@
 
 <!-- ABOUT SECTION -->
     <section id="about">
-        <div class="profile-text">
-            <p>More About Me!</p>
-            <h1 class="title">About Me</h1>
+        <h1 class="title">About Me</h1>
+        <div class="about-outer-container">
+
+            <div class="overview-container">
+                <h4 id="intro">I am a highly motivated, innovative, and creative Computer Science student at the University of Victoria.
+                    Currently, I'm working as a Software Engineer coop where I have gained experience with
+                    embedded systems and backend software development.
+                </h4>
+            </div>
+
+            <div class="horizontal-container">
+                <div class="overview-container text-outline">
+                    <div class="horizontal-container">
+                        <img src="./assets/experience.png" alt="experience img" class="icon"/>
+                        <h3 class="about-header">Experience</h3>
+                    </div>
+                    <p>1+ year embedded systems development experience</p>
+                </div>
+
+                <div class="overview-container text-outline">
+                    <div class="horizontal-container">
+                        <img src="./assets/education.png" alt="education img" class="icon"/>
+                        <h3 class="about-header">Education</h3>
+                    </div>
+                    <p>B.Sc. Computer Science from University of Victoria</p>
+                </div>
+            </div>
+
         </div>
+        <img src="./assets/arrow.png" alt="arrow png" class="icon arrow" onclick="location.href='./#experience"/>
     </section>
+    </div> <!-- BLUR CONTAINER END -->
 
     <script src="script.js"></script>
-    </div>
-
-
 </body>
 </html>

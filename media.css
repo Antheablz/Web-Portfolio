@@ -10,21 +10,48 @@
 
 
 
-
-
-
-
     /* MOBILE PROFILE */
     #profile {
         display: block;
+        
     }
 
     .profile-pic-container {
         display: flex;
         justify-content: center;
-        height: 300px;
+        height: 260px;
         width: auto;
         margin-bottom: 3.5%;
     }
 
+    .profile-text-container {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        padding-bottom: 3vh;
+        padding-top: 2vh;
+    }
+
+
+
+    /* MOBILE ABOUT */
+    .about-header {
+        margin-left: 0;
+    }
+
+    .about-outer-container {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    #intro {
+        margin: 0;
+        font-size: medium;
+    }
+
+    .horizontal-container, .overview-container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: .5rem;
+    }
 }
