@@ -38,6 +38,7 @@
 
 <!-- HOME SECTION-->
     <div id="blur-container"><!-- BLUR CONTAINER START -->
+
     <section id="profile">
         <div class="profile-pic-container">
             <img  id="desktop-pic" src="./assets/profile-pic.jpeg" alt="Anthea Blais"/>
@@ -61,7 +62,7 @@
 <!-- ABOUT SECTION -->
     <section id="about">
         <h1 class="title">About Me</h1>
-        <div class="about-outer-container">
+        <div class="outer-container">
 
             <div class="overview-container">
                 <h4 id="intro">I am a highly motivated, innovative, and creative Computer Science student at the University of Victoria.
@@ -89,10 +90,62 @@
             </div>
 
         </div>
-        <img src="./assets/arrow.png" alt="arrow png" class="icon arrow" onclick="location.href='./#experience"/>
+        <img src="./assets/arrow.png" alt="arrow png" class="icon arrow" onclick="location.href='./#experience'"/>
     </section>
-    </div> <!-- BLUR CONTAINER END -->
 
+    <!-- EXPERIENCE SECTION -->
+    <section id="experience">
+        <h1 class="title">Work Experience</h1>
+        <div class="outer-container" style="background-color: var(--medium-pink);">
+
+            <div class="experience-inner-container" onclick="openDialog()">
+                <div>
+                    <h3>Software Engineer Co-op</h3>
+                    <h5>Zetron, Victoria, BC</h5>
+                </div>
+                <p>bla bla bla look at me sdjnbnsjibjsnbjfndjcfonfjndsjfnjsnfjnonjnonjim a software engineer</p>
+            </div>
+
+            <div class="experience-inner-container">
+                <div>
+                    <h3>In-N-Out</h3>
+                    <h5>Livermore, CA</h5>
+                </div>
+                <p>gang gang i flipped burgers for 7 years LOL</p>
+            </div>
+
+            <div class="experience-inner-container">
+                <div>
+                    <h3>XFDC</h3>
+                    <h5>Livermore, CA</h5>
+                </div>
+                <p> here is where i lie about how involved i was as a "teacher"</p>
+            </div>
+
+        </div>
+        <img src="./assets/arrow.png" alt="arrow png" class="icon arrow" onclick="location.href='./#projects'"/>
+    </section>
+
+        <!-- PROJECTS SECTION -->
+    <section id="projects">
+        <h1 class="title">Projects</h1>
+        <img src="./assets/arrow.png" alt="arrow png" class="icon arrow" onclick="location.href='./#contact'"/>
+    </section>
+
+    <section id="contact">
+        <h1 class="title">Contact</h1>
+        
+    </section>
+
+    <dialog id="work-dialog">
+        <div>
+            THIS IS MY DIALOG YAY
+        </div>
+
+        <div onclick="closeDialog('work-dialog')">close</div>
+    </dialog>
+
+    </div> <!-- BLUR CONTAINER END -->
     <script src="script.js"></script>
 </body>
 </html>
