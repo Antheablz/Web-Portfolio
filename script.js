@@ -8,19 +8,19 @@ function toggleMenu() {
     body.classList.toggle("blur")
 }
 
-function openDialog() {
-    let dialog = document.getElementById("work-dialog");
+function openDialog(dialog_id) {
+    let dialog = document.getElementById(dialog_id);
     let body = document.getElementById("blur-container");
 
-    dialog.showModal()
-    body.classList.toggle("blur")
-    console.log("FUCK YA DIALOG");
+    dialog.showModal();
+    body.classList.toggle("blur");
+    console.log('testing');
 }
 
-function closeDialog(elem_id) {
-    let dialog = document.getElementById(elem_id);
+function closeDialog(dialog_id) {
+    let dialog = document.getElementById(dialog_id);
     let body = document.getElementById("blur-container");
     
-    body.classList.toggle("blur")
+    body.classList.toggle("blur");
     dialog.close();
 }

@@ -98,15 +98,15 @@
         <h1 class="title">Work Experience</h1>
         <div class="outer-container" style="background-color: var(--medium-pink);">
 
-            <div class="experience-inner-container" onclick="openDialog()">
+            <div class="experience-inner-container" onclick="openDialog('zetron-dialog')">
                 <div>
                     <h3>Software Engineer Co-op</h3>
                     <h5>Zetron, Victoria, BC</h5>
                 </div>
-                <p>bla bla bla look at me sdjnbnsjibjsnbjfndjcfonfjndsjfnjsnfjnonjnonjim a software engineer</p>
+                <p>bla bla bla look at me im a software engineer</p>
             </div>
 
-            <div class="experience-inner-container">
+            <div class="experience-inner-container" onclick="openDialog('INO-dialog')">
                 <div>
                     <h3>In-N-Out</h3>
                     <h5>Livermore, CA</h5>
@@ -114,7 +114,7 @@
                 <p>gang gang i flipped burgers for 7 years LOL</p>
             </div>
 
-            <div class="experience-inner-container">
+            <div class="experience-inner-container" onclick="openDialog('xfdc-dialog')">
                 <div>
                     <h3>XFDC</h3>
                     <h5>Livermore, CA</h5>
@@ -137,12 +137,25 @@
         
     </section>
 
-    <dialog id="work-dialog">
+    <dialog id="zetron-dialog" class="dialog">
         <div>
-            THIS IS MY DIALOG YAY
+            zetron dialog
         </div>
+        <button id="close-zetron-dialog" class="btn" style="outline: none;" onclick="closeDialog('zetron-dialog')">close</button>
+    </dialog>
 
-        <div onclick="closeDialog('work-dialog')">close</div>
+    <dialog id="INO-dialog" class="dialog">
+        <div>
+            in-n-out dialog
+        </div>
+        <button id="close-INO-dialog" class="btn" style="outline: none;" onclick="closeDialog('INO-dialog')">close</button>
+    </dialog>
+
+    <dialog id="xfdc-dialog" class="dialog">
+        <div>
+            xfdc dialog
+        </div>
+        <button id="close-xfdc-dialog" class="btn" style="outline: none;" onclick="closeDialog('xfdc-dialog')">close</button>
     </dialog>
 
     </div> <!-- BLUR CONTAINER END -->
