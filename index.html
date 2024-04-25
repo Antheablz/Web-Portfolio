@@ -41,20 +41,24 @@
 
     <section id="profile">
         <div class="profile-pic-container">
-            <img  id="desktop-pic" src="./assets/profile-pic.jpeg" alt="Anthea Blais"/>
+            <img id="desktop-pic" src="./assets/profile-pic.jpeg" alt="Anthea Blais" draggable="false"/>
         </div>
         <div class="profile-text-container">
-            <p> Hello, I'm
-                <h1 class="title">Anthea Blais</h1>
-                Computer Science Student
-            </p>
+            <p> Hello, I'm</p>
+            <h1 class="title">Anthea Blais</h1>
+            <p>Computer Science Student</p>
             <div class="btn-container">
                 <button class="btn" onclick="window.open('./assets/Resume.pdf')">Resume</button>
                 <button class="btn" onclick="location.href='./#contact'">Contact Info</button>
             </div>
             <div id="socials-container">
-                <img id="linkedin-icon" src="./assets/linkedin.png" alt="linkedin img" class="icon" onclick="location.href='http://www.linkedin.com/in/antheablais'"/>
-                <img id="github-icon" src="./assets/github.png" alt="github img" class="icon" onclick="location.href='https://github.com/Antheablz'"/>
+                <a href="http://www.linkedin.com/in/antheablais">
+                    <img id="linkedin-icon" src="./assets/linkedin.png" alt="linkedin img" class="icon" draggable="false"/>
+                </a>
+
+                <a href="https://github.com/Antheablz">
+                    <img id="github-icon" src="./assets/github.png" alt="github img" class="icon" draggable="false"/>
+                </a>
             </div>
         </div>
     </section>
@@ -74,7 +78,7 @@
             <div class="horizontal-container">
                 <div class="overview-container text-outline">
                     <div class="horizontal-container">
-                        <img src="./assets/experience.png" alt="experience img" class="icon"/>
+                        <img src="./assets/experience.png" alt="experience img" class="icon" draggable="false"/>
                         <h3 class="about-header">Experience</h3>
                     </div>
                     <p>1+ year embedded systems development experience</p>
@@ -82,7 +86,7 @@
 
                 <div class="overview-container text-outline">
                     <div class="horizontal-container">
-                        <img src="./assets/education.png" alt="education img" class="icon"/>
+                        <img src="./assets/education.png" alt="education img" class="icon" draggable="false"/>
                         <h3 class="about-header">Education</h3>
                     </div>
                     <p>B.Sc. Computer Science from University of Victoria</p>
@@ -90,7 +94,6 @@
             </div>
 
         </div>
-        <img src="./assets/arrow.png" alt="arrow png" class="icon arrow" onclick="location.href='./#experience'"/>
     </section>
 
     <!-- EXPERIENCE SECTION -->
@@ -123,20 +126,46 @@
             </div>
 
         </div>
-        <img src="./assets/arrow.png" alt="arrow png" class="icon arrow" onclick="location.href='./#projects'"/>
     </section>
 
-        <!-- PROJECTS SECTION -->
+    <!-- PROJECTS SECTION -->
     <section id="projects">
         <h1 class="title">Projects</h1>
-        <img src="./assets/arrow.png" alt="arrow png" class="icon arrow" onclick="location.href='./#contact'"/>
     </section>
 
-    <section id="contact">
+    <!-- CONTACT SECTION -->
+    <section id="contact" style="margin-bottom: 3rem;">
         <h1 class="title">Contact</h1>
-        
+        <div class="outer-container">
+            <form id="contact-form" autocomplete="off">
+                <div class="input-container">
+                    <input type="text" class="text-outline contact-text"id="name" value="" placeholder="Your Name (required)" required />
+                    <div class="err-msg">Name Required</div>
+                </div>
+                
+                <div class="input-container">
+                    <input type="subject" class="text-outline contact-text" id="subject" value="" placeholder="Subject (required)" required/>
+                    <div class="err-msg">Subject Required</div>
+                </div>
+                
+                <div class="input-container">
+                    <input type="email" class="text-outline contact-text" id="email" value="" placeholder="Your Email Address (required)" required/>
+                    <div class="err-msg">Email Address Required</div>
+                </div>
+                
+                <div class="input-container">
+                    <textarea id="message" class="text-outline contact-text" rows="4" value="" placeholder="Message (required)" required></textarea>
+                    <div class="err-msg">Message Required</div>
+                </div>
+                <div class="btn-container">
+                    <button class="btn" formnovalidate onclick="checkInputFields()">Send</button>
+                </div>
+                
+            </form>
+        </div>
     </section>
 
+    <!-- DIALOGS -->
     <dialog id="zetron-dialog" class="dialog">
         <div>
             zetron dialog
@@ -157,6 +186,11 @@
         </div>
         <button id="close-xfdc-dialog" class="btn" style="outline: none;" onclick="closeDialog('xfdc-dialog')">close</button>
     </dialog>
+
+
+    <footer class="footer">
+        <div> testing</div>
+    </footer>
 
     </div> <!-- BLUR CONTAINER END -->
     <script src="script.js"></script>

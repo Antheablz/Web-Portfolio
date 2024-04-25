@@ -91,11 +91,14 @@ nav, .nav-links {
 }
 
 nav {
-    /*
-    background-color: var(--extra-light-pink);
+    
+    /*background-color: var(--extra-light-pink);
     border-radius: 30px;
     box-shadow: .5vh .5vh 1.5vh 0 var(--light-shadow);
-    */
+    margin: 1rem;
+    margin-bottom: 1rem;
+    border: var(--dark-pink) 0.1rem solid;
+    border-radius: 30px;*/
 
     justify-content: space-around;
     align-items: center;
@@ -258,6 +261,7 @@ section {
 .title {
     font-size: 2.5rem;
     text-align: center;
+    padding-bottom: 3%;
 }
 
 
@@ -276,13 +280,6 @@ section {
     margin-right: 3.5rem;
     border-radius: 30px;
     box-shadow: .5vh .5vh 1.5vh 0 var(--light-shadow);
-}
-
-.arrow {
-    display: block;
-    float: right;
-    margin: 1.5rem;
-    cursor: pointer;
 }
 
 .about-header {
@@ -317,7 +314,7 @@ section {
 
 
 
-/* EXPERIENCE SRCTION */
+/* EXPERIENCE SERCTION */
 #experience {
     display: block;
 }
@@ -361,4 +358,44 @@ section {
 
 #close-zetron-dialog:hover, #close-INO-dialog:hover, #close-xfdc-dialog:hover {
     cursor: pointer;
+}
+
+
+
+/* CONTACT SERCTION */
+#contact {
+    display: block;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 1rem;
+    margin: 3rem;
+}
+
+.contact-text {
+    resize: none;
+    font-size: 16px;
+    width: 100%;
+}
+
+.contact-text:focus {
+    outline: 1.5px solid var(--dark-pink);
+}
+
+.err-msg {
+    text-align: left;
+    color: red;
+    visibility: hidden;
+}
+
+
+
+
+.footer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
 }
