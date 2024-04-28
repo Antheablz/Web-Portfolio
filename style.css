@@ -338,7 +338,6 @@ section {
     box-shadow: .5vh .5vh 1.5vh 0 var(--light-shadow);
 }
 
-
 .dialog {
     z-index: 10;
     left: 50%;
@@ -358,6 +357,10 @@ section {
 
 #close-zetron-dialog:hover, #close-INO-dialog:hover, #close-xfdc-dialog:hover {
     cursor: pointer;
+}
+
+.read-more-icon {
+    height: 2rem;;
 }
 
 
