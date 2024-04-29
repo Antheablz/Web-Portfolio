@@ -25,6 +25,11 @@ function closeDialog(dialog_id) {
     dialog.close();
 }
 
+function scrollToStart() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+
 /*
 function checkInputFields() {
     let form = document.getElementById("contact-form");

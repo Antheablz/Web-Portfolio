@@ -103,6 +103,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     height: 17vh;
+    margin: 1.5rem;
 }
 
 .nav-links {
@@ -209,7 +210,7 @@ section {
     min-height: fit-content;
     display: flex;
     justify-content: center;
-    margin-bottom: 12rem;
+    margin-bottom: 15rem;
     cursor: default;
 }
 
@@ -240,7 +241,6 @@ section {
     display: flex;
     height: 400px;
     width: 400px;
-    /*margin: auto 0;*/
 }
 
 .profile-text-container {
@@ -322,12 +322,11 @@ section {
 .experience-inner-container {
     display: flex;
     align-items: center;
-    
     border-radius: 30px;
     background-color: var(--extra-light-pink);
     margin: 1.5rem;
-    padding: 5%;
-    gap: 1rem;
+    padding: 2.5%;
+    gap: 2rem;
     width: 80%;
 }
 
@@ -355,12 +354,20 @@ section {
     color: var(--dark-pink);
 }
 
+.dialog li {
+    display: list-item;
+    list-style-type: circle;
+    margin: 0px;
+}
+
 #close-zetron-dialog:hover, #close-INO-dialog:hover, #close-xfdc-dialog:hover {
     cursor: pointer;
 }
 
 .read-more-icon {
-    height: 2rem;;
+    height: 2rem;
+    margin-left: auto;
+    align-self: flex-start;
 }
 
 
@@ -397,8 +404,23 @@ section {
 
 
 
+/* FOOTER */
 .footer {
+    color: var(--dark-pink);
     display: flex;
     justify-content: center;
-    margin-bottom: 3rem;
+    align-items: center;
+    margin-bottom: 2.5rem;
+}
+
+#top {
+    margin-left: auto;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+#top:hover {
+    color: var(--medium-pink);
+    text-decoration: underline;
+    text-decoration-color: var(--medium-pink);
 }

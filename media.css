@@ -13,7 +13,6 @@
     /* MOBILE PROFILE */
     #profile {
         display: block;
-        
     }
 
     .profile-pic-container {
@@ -54,4 +53,21 @@
         text-align: center;
         margin-bottom: .5rem;
     }
+
+    /* MOBILE EXPERIENCE */
+    .experience-inner-container {
+        display: block;
+        text-align: center;
+    }
+
+    .experience-inner-container p {
+        margin: 1rem;
+        border-radius: 20px;
+    }
+
+    .experience-inner-container h5, .experience-inner-container h3{
+        text-decoration: underline;
+    }
+
+
 }
